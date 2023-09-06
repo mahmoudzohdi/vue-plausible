@@ -1,6 +1,7 @@
 import path from 'path'
 import { Module } from '@nuxt/types'
 import { PlausibleModuleOptions } from './module-options'
+import packageJSON from '../package.json'
 
 // default options, fallback to plausible-tracker defaults
 const defaultOptions: PlausibleModuleOptions = {
@@ -32,4 +33,4 @@ const PlausibleModule: Module<PlausibleModuleOptions> = function (moduleOptions)
 
 export default PlausibleModule
 
-export const meta = require('../../package.json')
+export const meta = packageJSON
