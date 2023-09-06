@@ -28,7 +28,7 @@
     "plugin"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json",
+    "build": "tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json --resolveJsonModule",
     "prepublishOnly": "npm run build",
     "release": "standard-version --sign",
     "release:pre": "standard-version --sign --prerelease pre"

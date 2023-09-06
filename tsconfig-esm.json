@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "ES2020",
-    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "esnext",
+    "moduleResolution": "Node",
     "lib": [
-      "es2015",
-      "dom"
+      "ESNext",
+      "DOM"
     ],
     "strict": true,
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,
